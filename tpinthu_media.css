@@ -1,0 +1,73 @@
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+        position: absolute;
+    }
+
+    #hamburger-nav {
+        display: flex;
+        position: fixed;
+    }
+
+
+
+    .wrapper {
+        perspective: 5px;
+    }
+
+    section {
+        transform: translateZ(-5px) scale(2);
+    }
+
+    #profile {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .profile-container {
+        justify-content: center;
+        width: auto;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+    #profile-img {
+        border-radius: 50%;
+        height: 270px;
+        width: 270px;
+    }
+
+    .skills-title {
+        flex-direction: column;
+    }
+
+    .social-contact {
+        flex-direction: column;
+    }
+
+    #contact {
+        padding-top: 100px;
+    }
+
+    #education {
+        padding: 250px 0;
+        margin: 0 50px;
+    }
+
+    #projects {
+        padding: 400px 0;
+    }
+
+    .project-card {
+        width: 100%;
+        margin: .25rem;
+    }
+
+}
+
+@media screen and (max-width: 1400px) {
+    .skills-container {
+        flex-direction: column;
+        margin: 0 15px;
+    }
+}

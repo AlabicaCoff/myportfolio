@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="tpinthu.css" />
+    <link rel="stylesheet" href="tpinthu_media.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            <a href="main.html"><</a>
+        </div>
+        <div>
+            <ul class="follow-nav">
+
+            </ul>
+        </div>
+        <div>
+            <ul class="home-nav-links">
+                <li><a id="profile-btn" onclick="goToFunction(0)">About</a></li>
+                <li><a href="#parallax-bg1">Education</a></li>
+                <li><a href="#parallax-bg2">Skills</a></li>
+                <li><a href="#parallax-bg3">Projects</a></li>
+                <li><a href="#parallax-bg4">Activities</a></li>
+                <li><a href="#parallax-bg5">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <a href="#Back"><</a>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a id="profile-btn" onclick="goToFunction(0)">About</a></li>
+                <li><a href="#parallax-bg1">Education</a></li>
+                <li><a href="#parallax-bg2">Skills</a></li>
+                <li><a href="#parallax-bg3">Projects</a></li>
+                <li><a href="#parallax-bg4">Activities</a></li>
+                <li><a href="#parallax-bg5">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <section id="profile">
+            <div class="profile-container">
+                <img id="profile-img" src="assets/profile1.jpg" alt="my profile picture">
+            </div>
+            <div class="profile-text">
+                <p class="profile-text-p1">Hello, I'm</p>
+                <h1 class="title">Thanathat Pinthu</h1>
+                <p class="profile-text-p2">Computer Engineering Student</p>
+                <p class="profile-text-p3">Nickname: March | Birthday: 25 Dec 2003</p>
+                <div class="btn-container">
+                    <button class="btn btn-color2" onclick="window.location.href='#parallax-bg1'">
+                        Showcase
+                    </button>
+                    <button class="btn btn-color1" onclick="window.location.href='#parallax-bg2'">
+                        Contact
+                    </button>
+                </div>
+                <p class="profile-text-p2 quote">Coding is <span>Life</span></p>
+            </div>
+        </section>
+        <div class="parallax" id="parallax-bg1">
+            <h1 class="title">Education</h1>
+            <h2 class="famous-quote">
+                "Education is not the learning of facts. 
+                <br/> It's rather the training of the mind to think."
+            </h2>
+            <p class="quote-by">― Albert Einstein</p>
+        </div>
+        <section id="education">
+            <hr/>
+            <div class="school-container">
+                <div class="school">
+                    <div class="school-detail-col">
+                        <h2 class="school-name">King Mongkut's Institute of Technology Ladkrabang</h2>
+                        <h3 class="school-program i">
+                            B. Engineering (Computer Engineering)
+                        </h3>
+                        <p class="school-description">
+                            • GPAX 3.30
+                        </p>
+                        <p class="school-description">
+                            • Expected 2026
+                        </p>
+                        <p class="school-description long-description">
+                            King Mongkut's Institute of Technology Ladkrabang
+                             (KMITL or KMIT Ladkrabang for short) is a research 
+                             and educational institution in Thailand. 
+                             It is situated in Lat Krabang District, Bangkok approximately 30 km 
+                             east of the city center. The university consists of nine faculties: 
+                             engineering, architecture, science, industrial education and technology, 
+                             agricultural technology, information technology, food industry, liberal arts, and medicine.
+                        </p>
+                    </div>
+                    <div class="school-img-col">
+                        <img class="school-img" src="/assets/kmitl.jpg" alt="kmitl-image">
+                    </div>
+                </div>
+                <hr />
+                <div class="school">
+                    <div class="school-img-col">
+                        <img class="school-img" src="/assets/pibul.jpg" alt="pibul-image" height="180px">
+                    </div>
+                    <div class="school-detail-col">
+                        <h2 class="school-name">Pibulwitthayalai School, Lopburi</h2>
+                        <h3 class="school-program i">
+                            Sci - Math General Program
+                        </h3>
+                        <p class="school-description">
+                            • GPAX 3.75
+                        </p>
+                        <p class="school-description">
+                            • 2018 - 2021
+                        </p>
+                        <p class="school-description long-description">
+                            Pibulwitthayalai School (English: Pibulwitthayalai School)
+                             is the first and only large special high school of 
+                             the Department of General Education in the region. 
+                             Under the jurisdiction of the Singburi Secondary Educational Service Area Office,
+                              Ang Thong, Area 5, Office of the Basic Education Commission. Ministry of Education 
+                              It has the status of being a school in Lopburi Province. 
+                              Located at 777 Narai Maharat Road. Lopburi Municipality, Tha Hin Subdistrict, 
+                              Mueang Lopburi District Lopburi Province
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+        </section>
+        <div class="parallax" id="parallax-bg2">
+            <h1 class="title">Skills</h1>
+            <h2 class="famous-quote">
+                "Talent you have naturally. Skill is only developed by 
+                hours <br/> and hours and hours of beating on your craft."
+            </h2>
+            <p class="quote-by">― Will Smith</p>
+        </div>
+        <section id="experience">
+            <div class="experience-container">
+                <div class="skills-container">
+                    <div class="skills">
+                        <h2 class="sub-title">Programming</h2>
+                        <div class="progress">
+                            <span class="skill">
+                                JavaScript
+                                <i class="val">70%</i>
+                            </span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span class="skill">
+                                Python
+                                <i class="val">60%</i>
+                            </span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span class="skill">
+                                HTML & CSS
+                                <i class="val">50%</i>
+                            </span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" style="width: 30%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span class="skill">
+                                C & C++
+                                <i class="val">30%</i>
+                            </span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" style="width: 30%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <h2 class="sub-title">Database</h2>
+                        <div class="progress">
+                            <span class="skill">
+                                PostgreSQL
+                                <i class="val">70%</i>
+                            </span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span class="skill">
+                                MySQL
+                                <i class="val">70%</i>
+                            </span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span class="skill">
+                                Firebase
+                                <i class="val">50%</i>
+                            </span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-container">
+                    <div class="skills">
+                        <h2 class="sub-title">Technologies</h2>
+                        <div class="progress">
+                            <span class="skill">
+                                NodeJS
+                                <i class="val">70%</i>
+                            </span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span class="skill">
+                                ReactJS
+                                <i class="val">40%</i>
+                            </span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span class="skill">
+                                ASP.NET Core MVC
+                                <i class="val">60%</i>
+                            </span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <h2 class="sub-title">Others</h2>
+                        <div class="progress">
+                            <span class="skill">
+                                Linux Command
+                                <i class="val">50%</i>
+                            </span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span class="skill">
+                                Git & Github
+                                <i class="val">50%</i>
+                            </span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span class="skill">
+                                OAuth
+                                <i class="val">30%</i>
+                            </span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" style="width: 30%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span class="skill">
+                                ChatGPT
+                                <i class="val">70%</i>
+                            </span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="parallax" id="parallax-bg3">
+            <h1 class="title">Projects</h1>
+            <h2 class="famous-quote">
+                "I'm a person who enjoys the hands-on experience 
+                of anything I do. <br/> Get your hands dirty - 
+                that's the thing that drives and motivates me."
+            </h2>
+            <p class="quote-by">― Jeff Raikes</p>
+        </div>
+        <section id="projects">
+            <article class="project-card">
+                <div class="project-container">
+                    <img class="project-img" src="/assets/project1.png" alt="booknotes-image" height="210px">
+                    <header class="project-title">
+                        <h1>Book Notes</h1>
+                    </header>
+                    <div class="project-detail">
+                        <p class="project-description">
+                            Book Notes website built with NodeJS and PostgreSQL 
+                            as a part of web development udemy course
+                            Built web application for add, edit, view, delete and sort book notes.
+                        </p>
+                        <div class="project-tags">
+                            <span>NodeJS</span>
+                            <span>PostgreSQL</span>
+                            <span>Backend</span>
+                            <span>Frontend</span>
+                            <span>Javascript</span>
+                        </div>
+                        <div class="project-btn-container">
+                            <div class="project-link-btn">
+                                <a href="https://bit.ly/3XsNZYh">Presentation</a>
+                            </div>
+                            <div class="project-link-btn">
+                                <a href="https://github.com/AlabicaCoff/Book-Notes">Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-container">
+                    <img class="project-img" src="/assets/project2.png" alt="joinhub-image" height="210px">
+                    <header class="project-title">
+                        <h1>JOINHUB</h1>
+                    </header>
+                    <div class="project-detail">
+                        <p class="project-description">
+                            JOINHUB website built with ASP.NET Core MVC and MySQL 
+                            As a part of web application development course
+                            Built web application for basic CRUD, join, search, filter activities,
+                            notifications & authentication.
+                        </p>
+                        <div class="project-tags">
+                            <span>ASP.NET Core MVC</span>
+                            <span>MySQL</span>
+                            <span>Backend</span>
+                            <span>Frontend</span>
+                            <span>College</span>
+                            <span>C++</span>
+                        </div>
+                        <div class="project-btn-container">
+                            <div class="project-link-btn">
+                                <a href="https://bit.ly/4etgQlh">Presentation</a>
+                            </div>
+                            <div class="project-link-btn">
+                                <a href="https://github.com/AlabicaCoff/JOINHUB">Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-container">
+                    <img class="project-img" src="/assets/project3.png" alt="booknotes-image" height="210px">
+                    <header class="project-title">
+                        <h1>Frontend Google Clone</h1>
+                    </header>
+                    <div class="project-detail">
+                        <p class="project-description">
+                            First assignment of CS50 Web Programming: 
+                            A simple frontend clone of Google Search, 
+                            Google Advanced Search and Google Images made 
+                            with HTML and SCSS.
+                        </p>
+                        <div class="project-tags">
+                            <span>Google Clone</span>
+                            <span>Frontend</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Javascript</span>
+                        </div>
+                        <div class="project-btn-container">
+                            <div class="project-link-btn">
+                                <a href="https://www.youtube.com/watch?v=F4QYv1FI2Ok">Presentation</a>
+                            </div>
+                            <div class="project-link-btn">
+                                <a href="https://github.com/AlabicaCoff/CS50W/tree/main/search">Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-container">
+                    <img class="project-img" src="/assets/project4.png" alt="booknotes-image" height="210px">
+                    <header class="project-title">
+                        <h1>CaseBamp</h1>
+                    </header>
+                    <div class="project-detail">
+                        <p class="project-description">
+                            Basecamp Clone Website - a Project management web application,
+                            As a part of Object Oriented Programming College Course to 
+                            learn about OOP concept. Built frontend with pure HTML, CSS & 
+                            Javascript and Built Backend with Python FastAPI 
+                            and This web application did not connect to the database.
+                        </p>
+                        <div class="project-tags">
+                            <span>Backend</span>
+                            <span>Frontend</span>
+                            <span>OOP</span>
+                            <span>College</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Python</span>
+                        </div>
+                        <div class="project-btn-container">
+                            <div class="project-link-btn">
+                                <a href="https://www.youtube.com/watch?v=JlkSLlzJSFY">Presentation</a>
+                            </div>
+                            <div class="project-link-btn">
+                                <a href="https://github.com/AlabicaCoff/CaseBamp">Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <div class="parallax" id="parallax-bg5">
+            <h1 class="title">Contact</h1>
+            <h2 class="famous-quote">
+                "But then you make eye contact with someone 
+                across the room and it clicks <br/> and you’re right there
+                 in love again."
+            </h2>
+            <p class="quote-by">― Taylor Swift</p>
+        </div>
+        <section id="contact">
+            <div class="contact-container">
+                <h1 class="sub-title">Contact</h1>
+            </div>
+            <div class="contact-container">
+                <div class="social-contact">
+                    <a href="https://www.facebook.com/mrchmello" class="icon">
+                        <i class="fa fa-facebook"></i>
+                        <p>Thanathat P.</p>
+                    </a>
+                    <a href="https://instagram.com/mello_mrch" class="icon">
+                        <i class="fa fa-instagram"></i>
+                        <p>mello_mrch</p>
+                    </a>
+                    <a href="https://github.com/AlabicaCoff" class="icon">
+                        <i class="fa fa-github"></i>
+                        <p>AlabicaCoff</p>
+                    </a>
+                    <a href="mailto:thanathatp2003@gmail.com" class="icon">
+                        <i class="fa fa-google"></i>
+                        <p>thanathatp2003</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <span class="footer-text">© <span>2024</span> - Thanathat Pinthu</span>
+        </footer>
+    </div>
+    <script src="tpinthu.js"></script>
+  </body>
