@@ -46,10 +46,8 @@ a, .btn {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 100%;
     height: 100%;
     justify-content: center;
-    align-items: center;
     z-index: 2;
 }
 
@@ -92,16 +90,17 @@ nav, .home-nav-links {
 
 nav {
     background-color: #28282B;
-    justify-content: space-around;
     align-items: center;
     height: 11vh;
     width: 100%;
-    z-index: 3;
+    z-index: 1000;
+    position: sticky;
     top: 0;
 }
 
 #desktop-nav {
-    position: fixed;
+    gap: 22%;
+    justify-content: center;
 }
 
 .home-nav-links {
@@ -129,14 +128,8 @@ a:hover {
 }
 
 .logo {
-    color: white;
     text-shadow: 0 0 5px black;
-    font-size: 2rem;
-    border: 2px solid white;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    text-align: center;
+    font-size: 3rem;
 }
 
 .logo:hover {
@@ -224,7 +217,6 @@ a:hover {
 
 section {
     padding: 4vh;
-    margin: 10rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
@@ -237,7 +229,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 75vh;
+    height: 100%;
 }
 
 .profile-container {
@@ -357,9 +349,7 @@ section {
 /* Experience */
 
 #experience {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 100px 100px;
 }
 
 .sub-title {
@@ -369,15 +359,21 @@ section {
 }
 
 .experience-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     border-radius: 1rem;
     border: rgb(163, 163, 163) 0.1rem solid;
     text-align: center;
-    margin: 100px 0;
+    padding: 0 20px;
+    margin: 8em;
 }
 
 .skills-container {
     display: flex;
+    gap: 20px;
+    width: 100%;
 }
 
 #certificate {
@@ -387,8 +383,7 @@ section {
 }
 
 .skills {
-    width: 500px;
-    padding: 10px 12px;
+    width: 100%;
 }
 
 .progress {
@@ -418,8 +413,10 @@ section {
 /* Contact */
 
 #contact {
-    padding-top: 250px;
-    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
 }
 
 .contact-container {
@@ -476,22 +473,38 @@ footer .footer-text {
 
 /* Education */
 
-.school {
+#education {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: 6em;
 }
 
-.school > * {
+#activities {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 12em;
+    padding: 10em 0 6em 0;
+}
+
+.school, .activity {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.school, .activity > * {
     flex-shrink: 0;
     width: 100%;
 }
 
-.school-img-col {
+.school-img-col, .activity-img-col {
     width: 30%;
     padding: 0 6px;
 }
 
-.school-detail-col {
+.school-detail-col, .activity-detail-col {
     width: 60%;
     padding: 0 6px;
     background-image: url(assets/);
@@ -517,11 +530,28 @@ footer .footer-text {
     border-radius: 0.25rem;
 }
 
-.school-name {
+.activity-img{
+    border-radius: 0.25rem;
+    max-width: 100%;
+}
+
+.mySlides1 .activity-img {
+    height: 400px;
+}
+
+.mySlides2 .activity-img {
+    height: 400px;
+}
+
+.mySlides3 .activity-img {
+    height: 400px;
+}
+
+.school-name, .activity-name {
     color: white;
 }
 
-.school-program {
+.school-program, .activity-program {
     color: rgb(181, 181, 181);
     text-indent: 10px;
 }
@@ -530,23 +560,30 @@ footer .footer-text {
     font-style: italic;
 }
 
-.school-description {
+.school-description, .activity-description {
     text-indent: 20px;
 }
 
 .long-description {
-    margin-top: 20px;
+    margin-top: 12px;
+}
+
+.activity-description span {
+    padding-left: 22px;
 }
 
 /* Projects */
 
 #projects {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 75%;
-    max-width: 90em;
-    padding: 150px 0;
+    flex-direction: column;
+    margin: 12em 4em;
+    padding: 10em 2em;
+}
+
+.project-row {
+    display: flex;
+    gap: 20px;
 }
 
 .project-card {
@@ -620,4 +657,43 @@ footer .footer-text {
     text-transform: uppercase;
     border-radius: 35px;
     font-size: 1rem;
+}
+
+.mySlides1, .mySlides2, .mySlides3 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
 }
